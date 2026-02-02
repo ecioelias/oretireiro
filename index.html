@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Retireiro — Romance Brasileiro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --card: #161616;
+      --text: #f5f5f5;
+      --muted: #b5b5b5;
+      --accent: #d4a373;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    header img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .author {
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 26px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .btn.primary:hover {
+      filter: brightness(1.1);
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+
+    .btn.secondary:hover {
+      background: rgba(212,163,115,0.1);
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .highlight {
+      background: var(--card);
+      padding: 40px;
+      border-radius: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .highlight div {
+      text-align: center;
+    }
+
+    .highlight strong {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #222;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="o retireiro.png" alt="Capa do livro O Retireiro" />
+      <div class="hero">
+        <h1>O Retireiro</h1>
+        <p>Um romance brasileiro que celebra o amor, a tradição e as raízes do interior.</p>
+        <div class="author">Autor: Écio Elias Ferreira</div>
+        <div class="actions">
+          <a class="btn primary" href="https://produto.mercadolivre.com.br/MLB-6207556868?matt_tool=38524122#origin=share&sid=share&action=whatsapp" target="_blank">Comprar agora</a>
+          <a class="btn secondary" href="https://wa.me/553497925529" target="_blank">Falar com o autor</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Sobre o livro</h2>
+      <p class="description">
+        O Retireiro é um romance ambientado na Serra da Canastra, onde amor e tradição se entrelaçam em uma narrativa envolvente, humana e profundamente brasileira. A obra convida o leitor a caminhar pelas paisagens do interior, explorando sentimentos, escolhas e a força das raízes culturais.
+      </p>
+    </section>
+
+    <section class="highlight">
+      <div>
+        <strong>Romance</strong>
+        Emoção, afetos e conflitos humanos
+      </div>
+      <div>
+        <strong>Brasil profundo</strong>
+        Serra da Canastra como cenário vivo
+      </div>
+      <div>
+        <strong>Tradição</strong>
+        Costumes, valores e identidade
+      </div>
+    </section>
+
+    <footer>
+      <p>© Écio Elias Ferreira — Todos os direitos reservados</p>
+      <p>Contato direto com o autor: <a href="https://wa.me/553497925529" target="_blank">WhatsApp</a></p>
+    </footer>
+  </div>
+</body>
+</html>
